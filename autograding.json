@@ -1,0 +1,56 @@
+{
+  "tests": [
+    {
+      "name": "Compile Program",
+      "run": "gcc srtf.c -o srtf",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Test Case 1",
+      "run": "./srtf",
+      "input": "5\nP1 2 6\nP2 5 2\nP3 1 8\nP4 0 3\nP5 4 4",
+      "output": "Waiting Time:\nP1 7\nP2 0\nP3 14\nP4 0\nP5 2\nTurnaround Time:\nP1 13\nP2 2\nP3 22\nP4 3\nP5 6\nAverage Waiting Time: 4.6\nAverage Turnaround Time: 9.2",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test Case 2",
+      "run": "./srtf",
+      "input": "3\nP1 0 5\nP2 1 3\nP3 2 2",
+      "output": "Waiting Time:\nP1 5\nP2 2\nP3 0\nTurnaround Time:\nP1 10\nP2 5\nP3 2\nAverage Waiting Time: 2.3\nAverage Turnaround Time: 5.7",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test Case 3",
+      "run": "./srtf",
+      "input": "4\nP1 0 7\nP2 2 4\nP3 4 1\nP4 5 4",
+      "output": "Waiting Time:\nP1 9\nP2 1\nP3 0\nP4 2\nTurnaround Time:\nP1 16\nP2 5\nP3 1\nP4 6\nAverage Waiting Time: 3.0\nAverage Turnaround Time: 7.0",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test Case 4",
+      "run": "./srtf",
+      "input": "3\nP1 1 4\nP2 2 2\nP3 3 1",
+      "output": "Waiting Time:\nP1 3\nP2 1\nP3 0\nTurnaround Time:\nP1 7\nP2 3\nP3 1\nAverage Waiting Time: 1.3\nAverage Turnaround Time: 3.7",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Test Case 5",
+      "run": "./srtf",
+      "input": "4\nP1 0 6\nP2 1 2\nP3 2 4\nP4 3 3",
+      "output": "Waiting Time:\nP1 6\nP2 0\nP3 3\nP4 1\nTurnaround Time:\nP1 12\nP2 2\nP3 7\nP4 4\nAverage Waiting Time: 2.5\nAverage Turnaround Time: 6.3",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    }
+  ]
+}
